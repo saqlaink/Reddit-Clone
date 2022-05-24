@@ -16,9 +16,9 @@ const Home: NextPage = () => {
 
   return (
     <div className="my-7 mx-auto max-w-5xl">
-      <div className="px-5">
-        <PostBox />
-      </div>
+      {/* <div className="sticky px-5 lg:inline"> */}
+      <PostBox />
+      {/* </div> */}
       <div className="flex">
         <Feed />
         <div className="sticky top-36 mx-5 mt-5 hidden h-fit min-w-[300px] rounded-md border border-gray-300 bg-white lg:inline">

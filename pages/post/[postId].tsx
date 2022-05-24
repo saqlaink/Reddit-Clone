@@ -57,8 +57,6 @@ function PostPage() {
     })
   }
 
-  console.log(data)
-
   return (
     <div className="mx-auto my-7 max-w-5xl px-5">
       <Post post={post} />
