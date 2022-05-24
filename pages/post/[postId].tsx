@@ -60,7 +60,7 @@ function PostPage() {
   console.log(data)
 
   return (
-    <div className="mx-auto my-7 max-w-5xl">
+    <div className="mx-auto my-7 max-w-5xl px-5">
       <Post post={post} />
       <div className="-mt-1 rounded-b-md border border-t-0 border-gray-300 bg-white p-5 pl-16">
         <p className="text-sm">

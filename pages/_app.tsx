@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import { ApolloProvider } from '@apollo/client'
 import client from '../apollo-client'
 import { Toaster } from 'react-hot-toast'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   return (
@@ -12,6 +13,10 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
       <SessionProvider session={session}>
         <Toaster />
         <div className="h-screen overflow-y-scroll bg-slate-200">
+          <Head>
+            <title>Reddit - Dive into Anything</title>
+            <link rel="icon" href="/fav.png" />
+          </Head>
           <Header />
           <Component {...pageProps} />
         </div>
